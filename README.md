@@ -129,11 +129,20 @@ Users authenticate using JWT tokens. Upon successful login, a token is issued an
 
 
 
-Login Page
+## 📸 Screenshots
 
-Chat Interface
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
 
-Notifications Page
+### 💬 Chat Interface
+![Chat Interface](screenshots/chat.png)
+
+### 🔔 Notifications
+![Notifications](screenshots/notification.png)
+
+### 🎥 Video Call
+![Video Call](screenshots/videoCall.png)
+
 
 Video Call Screen
 
