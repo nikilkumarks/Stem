@@ -119,7 +119,7 @@ POST   /friends/accept
 
 Chat
 
-GET    /chats/:Id/
+GET    /chats/:Id
 
 🔑 Authentication Flow
 
