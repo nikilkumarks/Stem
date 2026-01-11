@@ -139,13 +139,13 @@ Video Call Screen
 
 🔗 Live Demo & Repository
 
-Live Demo: https://your-live-link.com
+Live Demo: https://stem-o0zn.onrender.com/
 
-GitHub Repository: https://github.com/your-username/stem-chat-application
+GitHub Repository: https://github.com/nikilkumarks/Stem
 
 ▶️ How to Run Locally
 1. Clone the repository
-   git clone https://github.com/your-username/stem-chat-application.git
+   git clone https://github.com/nikilkumarks/Stem.git
 
 2. Install dependencies
    npm install
@@ -159,8 +159,6 @@ GitHub Repository: https://github.com/your-username/stem-chat-application
    npm start
 
    🧠 Challenges & Learnings
-
-Implemented real-time typing indicators, reactions, and presence handling
 
 Efficient server-state management using TanStack Query
 
