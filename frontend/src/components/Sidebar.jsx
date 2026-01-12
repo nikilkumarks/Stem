@@ -8,14 +8,14 @@ const Sidebar = () => {
     const currentPath = location.pathname;
   return (
     <aside className="w-64 bg-base-200 border-r border-base-300 hidden lg:flex flex-col h-screen sticky top-0">
-        <div className="p-5 border-b border-base-300">
+        {/* <div className="p-5 border-b border-base-300">
             <Link to="/" className="flex items-center gap-2.5">
             <ShipWheelIcon className="size-9 text-primary" />
             <span className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
                 Stem
             </span>
             </Link>
-        </div>
+        </div> */}
 
         <nav className="flex-1 p-4 space-y-1">
          <Link 
@@ -58,7 +58,7 @@ const Sidebar = () => {
                 </div>
                 <div className="flex-1">
                     <p className="font-semibold text-sm">{authUser?.fullName}</p>
-                    <p className="text-xs text-success flex items-center gap-1">
+                    <p className="text-xs text-success flex items-center gap-2">
                         <span className="size-2 rounded-full bg-success inline-block">
                             Online
                         </span>

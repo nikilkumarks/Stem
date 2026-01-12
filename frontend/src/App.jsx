@@ -16,6 +16,7 @@ import { getAuthUser } from './lib/api.js';
 import useAuthUser from './hooks/useAuthUser.js';
 import  Layout  from './components/Layout.jsx';
 import { useThemeStore } from './store/useThemeStore.js';
+import Friends from "./pages/Friends.jsx"
 
 
  const App = () => {
@@ -32,7 +33,18 @@ import { useThemeStore } from './store/useThemeStore.js';
   return (
     <div className='h-screen' data-theme={theme}>
      
+     
      <Routes>
+   
+       <Route path="/friends" element={
+        isAuthenticated && isOnboarded ?(
+        <Layout showSidebar="true">
+        <Friends/>
+        </Layout>
+        ) : (<Navigate to ={!isAuthenticated ? "/login" : "/onboarding" } />
+          )
+        } />
+   
         <Route 
         path="/" 
         element={
@@ -54,7 +66,20 @@ import { useThemeStore } from './store/useThemeStore.js';
           !isAuthenticated ?<LoginPage/> : <Navigate to={isOnboarded ? "/" : "/onboarding"} />
           } 
           />
-        <Route path="/onboarding" element={isAuthenticated && !isOnboarded ?<OnboardingPage/> : <Navigate to="/login" />} />  
+        <Route
+        path = "/onboarding"
+        element={
+          isAuthenticated ? (
+            !isOnboarded ?(
+              <OnboardingPage />
+            ) : (
+              <Navigate to="/" />
+            ) 
+          ): (
+            <Navigate to="/login" />
+          )
+        }
+        />
         <Route 
         path="/notifications" 
         element={

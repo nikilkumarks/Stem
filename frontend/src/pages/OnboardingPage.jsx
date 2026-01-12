@@ -8,7 +8,7 @@ import { LANGUAGES } from '../constants/index.js';
 
 const OnboardingPage = () => {
     const { authUser } = useAuthUser();
-    const queryClient = useQueryClient
+    const queryClient = useQueryClient();
 
     const[formState, setFormState] = useState({
         fullName: authUser?.fullName || "",
@@ -23,7 +23,9 @@ const OnboardingPage = () => {
         mutationFn: completeOnboarding,
         onSuccess: () => {
             toast.success("Profile onboarded successfully");
-            queryClient.invalidateQueries({ queryKey: ["authUser"]});
+            queryClient.invalidateQueries({ queryKey: ["authUser"],
+              });
+              navigate("/");
         },
 
         onError: (error)=> {
