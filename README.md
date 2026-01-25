@@ -1,4 +1,4 @@
-💬 STEM – Real-Time Chat Application
+💬 STEM – Real-Time Chat and Video Call Application 
 📌 Project Overview
 
 STEM is a full-stack real-time chat application that enables users to sign up, complete onboarding, connect with friends, and communicate through real-time messaging. The application supports typing indicators, read receipts, message reactions, online/offline presence, notifications, and video calling. It is built with a scalable backend architecture and a modern React frontend, focusing on performance, security, and real-time user experience.
